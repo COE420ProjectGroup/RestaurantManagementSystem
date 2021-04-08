@@ -1,0 +1,126 @@
+html {
+    scroll-behavior: smooth;
+}
+
+:root {
+    --background-color: #FEFAE0;
+    --accent-color: #606C38;
+    --accent-dark: #283618;
+    --primary-color: #DDA15E; 
+    --primary-dark: #BC6C25;
+  }
+
+body {
+    background-color: var(--background-color);
+    position: relative;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.main-text {
+    z-index: 100;
+    position: absolute;
+    top: 30vmin;
+    width: 100%;
+    color: var(--background-color);
+}
+
+.main-text h1 {
+    font-family: fantasy, 'Tahoma';
+    font-size: 10vmin;
+    animation: slideup 1.5s ;
+}
+
+.main-text h4 {
+    animation: fadein ease 2s;
+}
+
+@keyframes slideup {
+    from {
+        transform: translateY(15vh);
+        opacity: 0.1;
+    }
+    to {
+        transform: translateY();
+        opacity: 1;
+    }
+}
+
+@keyframes fadein {
+    0% { opacity: 0; }
+    70% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+.carousel {
+    z-index: -99;
+}
+
+.carousel-inner img {
+    width: 100vw;
+    max-height: 100vh;
+    filter:brightness(0.7);
+}
+
+#about, #contact, #login {
+    display: flex;
+    height: 100vmin;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 0.2rem solid #000;
+}
+
+main {
+    margin-top: 3rem;
+}
+
+.navbar-expand-md .navbar-nav .nav-link {
+    padding: 0.5rem 1rem;
+}
+
+.nav-link {
+    color: var(--accent-color) !important;
+}
+
+.nav-link.active {
+    color: var(--background-color) !important;
+    background-color: var(--accent-color);
+    border-radius: 0.25rem;
+}
+
+.nav-item button {
+    font-size: 1.25rem;
+    color: var(--accent-color);
+    border-color: var(--accent-color);
+}
+
+.nav-item button:hover {
+    font-size: 1.25rem;
+    color: var(--background-color);
+    background-color: var(--accent-color);
+    border-color: var(--accent-color);
+}
+
+.navbar-brand {
+    font-family: fantasy;
+    font-size: 1.5em;
+    color: var(--accent-dark) !important;
+}
+
+.navbar-toggler {
+    border: none;
+}
+
+.navbar {
+    font-size: larger;
+    background-color: var(--background-color);
+    box-shadow: 0 -3.25vh 5vh 0px var(--accent-color);
+}
+
+.navbar-collapse{
+    text-align: right;
+    
+}
+
+.nav-item {
+    padding: 0 1rem;
+}
