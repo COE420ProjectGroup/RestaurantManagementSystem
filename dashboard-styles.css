@@ -1,0 +1,31 @@
+@font-face {
+  font-family: Modernist-Milk;
+  src: url('Modernist-Milk.otf');
+}
+
+*  {
+  margin: 0;
+  padding: 0;
+}
+
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6{
+  font-family: Modernist-Milk, sans-serif;
+}
+
+.navbar-brand {
+  font: 1.5em Modernist-Milk, Arial, sans-serif;
+  margin: 0;
+}
+
+.jumbotron {
+  margin: 0;
+  padding: 2rem 1rem;
+  background-color: #e9ecef;
+}
+
+@media (min-width: 70rem) {
+  .dashboard {
+    height: 100vh;
+    display: flex;
+  }
+}
