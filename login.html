@@ -13,7 +13,7 @@
     <title>Khidma - Home</title>
 </head>
 
-<body class="bg-light">
+<body class="bg-light fw-light">
     <nav class="navbar navbar-expand-md navbar-dark bg-primary shadow">
         <div class="container-fluid">
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
@@ -32,23 +32,23 @@
         </div>
     </nav>
 
-    <main class="d-flex flex-column justify-content-center align-items-center my-5">
+    <main class="d-flex flex-column justify-content-center align-items-center my-2 my-md-5">
         <div class="card m-4 p-5 shadow">
-            <div class="display-3 h1 text-primary text-center">&nbsp;K.</div>
+            <div class="display-3 h1 text-primary text-center pb-2">&nbsp;K.</div>
             <div class="card-title h4 text-center">Login to Khidma</div>
             <hr>
             <form>
                 <!-- For Registration
                     <div class="row py-2">
                     <div class="col">
-                        <label for="validationCustom01" class="form-label fw-light">First name</label>
+                        <label for="validationCustom01" class="form-label">First name</label>
                         <input type="text" class="form-control" id="validationCustom01" placeholder="Mark" required>
                         <div class="valid-feedback">
                             Looks good!
                         </div>
                     </div>
                     <div class="col">
-                        <label for="validationCustom02" class="form-label fw-light">Last name</label>
+                        <label for="validationCustom02" class="form-label">Last name</label>
                         <input type="text" class="form-control" id="validationCustom02" placeholder="Otto" required>
                         <div class="valid-feedback">
                             Looks good!
@@ -56,7 +56,7 @@
                     </div>
                 </div> -->
                 <div class="py-2">
-                    <label for="validationCustomUsername" class="form-label fw-light">Username or email address</label>
+                    <label for="validationCustomUsername" class="form-label">Username or email address</label>
                     <div class="input-group">
                         <span class="input-group-text bg-primary text-white" id="inputGroupPrepend">@</span>
                         <input type="text" class="form-control" id="validationCustomUsername"
@@ -65,27 +65,30 @@
                 </div>
 
                 <div class="py-2">
-                    <label for="validationInputPassword" class="form-label fw-light">Password</label>
-                    <input type="password" class="form-control" id="exampleInputPassword" required>
-                  </div>
+                    <label for="validationInputPassword" class="form-label">Password</label>
+                    <div class="input-group">
+                        <span class="input-group-text bg-primary text-white" id="inputGroupPrepend">&nbsp;•&nbsp;</span>
+                        <input type="password" class="form-control" id="exampleInputPassword" required>
+                    </div>
+                </div>
 
                 <div class="py-2">
                     <div class="form-check">
                         <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
-                        <label class="form-check-label fw-light" for="invalidCheck">
-                            Agree to <a href="#">terms and conditions</a>
+                        <label class="form-check-label" for="invalidCheck">
+                            Agree to the <a href="#">terms and conditions</a>
                         </label>
                     </div>
                 </div>
 
-                <div class="text-center">
-                    <button class="btn btn-primary" type="submit">Login</button>
+                <div class="text-center pt-2">
+                    <button class="btn btn-primary w-50" type="submit">Login</button>
                 </div>
             </form>
         </div>
         <div class="card">
             <div class="card py-3 px-4 shadow">
-                <span class="fw-light">New to Khidma? <a class="fw-bold"href="#">Create an account</a></span>
+                <span class="fw-light">New to Khidma? <a class="fw-bold" href="#">Create an account</a></span>
             </div>
         </div>
     </main>
