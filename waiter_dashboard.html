@@ -42,7 +42,6 @@
                 </li>
             </ul>
         </div>
-        </div>
     </nav>
 
     <main class="dashboard">
@@ -65,10 +64,9 @@
                 Overview
             </a>
         </div>
-        </nav>
 
         <div class="flex-grow-1 p-md-5 bg-light">
-            <iframe id="ifr" src="w_tables.html" width="100%" style="height: 75vh;"></iframe>
+            <iframe class="shadow rounded" id="ifr" src="w_tables.html" width="100%" onload="this.style.height=(this.contentWindow.document.body.scrollHeight+20)+'px';"></iframe>
         </div>
     </main>
 
