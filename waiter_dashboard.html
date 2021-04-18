@@ -48,19 +48,19 @@
     <main class="dashboard">
         <div class="list-group p-4">
             <h4 class="list-group-heading py-3 py-xl-5">Dashboard</h4>
-            <a href="#" class="list-group-item list-group-item-action active">
+            <a onclick="document.getElementById('ifr').setAttribute('src','w_tables.html')" class="list-group-item list-group-item-action active">
                 <span class="material-icons align-middle">table_view</span>
                 Tables
             </a>
-            <a href="#" class="list-group-item list-group-item-action">
+            <a onclick="document.getElementById('ifr').setAttribute('src','w_orders.html')" class="list-group-item list-group-item-action">
                 <span class="material-icons align-middle">list_alt</span>
                 Orders
             </a>
-            <a href="#" class="list-group-item list-group-item-action">
+            <a onclick="document.getElementById('ifr').setAttribute('src','w_kitchen.html')" class="list-group-item list-group-item-action">
                 <span class="material-icons align-middle">blender</span>
                 Kitchen
             </a>
-            <a href="#" class="list-group-item list-group-item-action">
+            <a onclick="document.getElementById('ifr').setAttribute('src','w_overview.html')" class="list-group-item list-group-item-action">
                 <span class="material-icons align-middle">assessment</span>
                 Overview
             </a>
@@ -68,56 +68,7 @@
         </nav>
 
         <div class="flex-grow-1 p-md-5 bg-light">
-            <div class="card border-primary mb-3">
-                <div class="card-header text-primary h5 p-3">Live Table Status</div>
-                <div class="card-body">
-                    <div class="card-deck">
-                        <div class="card bg-light text-primary p-3">
-                            <strong class="card-title">Table 1</strong>
-                            <p>Vacant</p>
-                        </div>
-                        <div class="card bg-primary text-light p-3">
-                            <strong class="card-title">Table 2</strong>
-                            <p>Booked</p>
-                        </div>
-                        <div class="card bg-primary text-light p-3">
-                            <strong class="card-title">Table 3</strong>
-                            <p>Booked</p>
-                        </div>
-                        <div class="card bg-light text-primary p-3">
-                            <strong class="card-title">Table 4</strong>
-                            <p>Vacant</p>
-                        </div>
-                        <div class="card bg-primary text-light p-3">
-                            <strong class="card-title">Table 5</strong>
-                            <p>Booked</p>
-                        </div>
-                    </div>
-                    <br>
-                    <div class="card-deck">
-                        <div class="card bg-primary text-light p-3">
-                            <strong class="card-title">Table 6</strong>
-                            <p>Booked</p>
-                        </div>
-                        <div class="card bg-light text-primary p-3">
-                            <strong class="card-title">Table 7</strong>
-                            <p>Vacant</p>
-                        </div>
-                        <div class="card bg-primary text-light p-3">
-                            <strong class="card-title">Table 8</strong>
-                            <p>Booked</p>
-                        </div>
-                        <div class="card bg-light text-primary p-3">
-                            <strong class="card-title">Table 9</strong>
-                            <p>Vacant</p>
-                        </div>
-                        <div class="card bg-light text-primary p-3">
-                            <strong class="card-title">Table 10</strong>
-                            <p>Vacant</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
+            <iframe id="ifr" src="w_tables.html" width="100%" style="height: 75vh;"></iframe>
         </div>
     </main>
 
