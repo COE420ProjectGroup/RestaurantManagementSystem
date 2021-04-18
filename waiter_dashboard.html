@@ -45,13 +45,15 @@
     </nav>
 
     <main class="dashboard">
-        <div class="list-group p-4">
-            <h4 class="list-group-heading py-3 py-xl-5">Dashboard</h4>
-            <button onclick="switchTab('w_tables')" class="list-group-item list-group-item-action active" id="w_tables">
+        <nav class="nav nav-tabs nav-pills flex-column p-4">
+            <h4 class="h2 py-3 py-xl-5">Dashboard</h4>
+            <button class="fs-5 pr-2 nav-link active" data-bs-toggle="tab" data-bs-target="#tables" type="button"
+                role="tab">
                 <span class="material-icons align-middle">table_view</span>
                 Tables
             </button>
-            <button onclick="switchTab('w_orders')" class="list-group-item list-group-item-action" id="w_orders">
+            <button class="fs-5 pr-2 nav-link" data-bs-toggle="tab" data-bs-target="#orders" type="button"
+                role="tab">
                 <span class="material-icons align-middle">list_alt</span>
                 Orders
             </button>
@@ -65,11 +67,74 @@
                 <span class="material-icons align-middle">assessment</span>
                 Overview
             </a> -->
-        </div>
+        </nav>
 
-        <div class="flex-grow-1 p-md-5 bg-light">
-            <iframe class="shadow rounded" id="ifr" src="w_tables.html" width="100%"
-                onload="this.style.height=(this.contentWindow.document.body.scrollHeight+20)+'px';"></iframe>
+        <div class="flex-grow-1 tab-content p-md-5 bg-light">
+
+            <div class="card border-primary mb-3 tab-pane active in" role="tabpanel" id="tables">
+                <div class="card-header text-primary h5 p-3">Live Table Status</div>
+                <div class="card-body">
+                    <div class="card-deck">
+                        <div class="card bg-light text-primary p-3">
+                            <strong class="card-title">Table 1</strong>
+                            <p>Vacant</p>
+                        </div>
+                        <div class="card bg-primary text-light p-3">
+                            <strong class="card-title">Table 2</strong>
+                            <p>Booked</p>
+                        </div>
+                        <div class="card bg-primary text-light p-3">
+                            <strong class="card-title">Table 3</strong>
+                            <p>Booked</p>
+                        </div>
+                        <div class="card bg-light text-primary p-3">
+                            <strong class="card-title">Table 4</strong>
+                            <p>Vacant</p>
+                        </div>
+                        <div class="card bg-primary text-light p-3">
+                            <strong class="card-title">Table 5</strong>
+                            <p>Booked</p>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="card-deck">
+                        <div class="card bg-primary text-light p-3">
+                            <strong class="card-title">Table 6</strong>
+                            <p>Booked</p>
+                        </div>
+                        <div class="card bg-light text-primary p-3">
+                            <strong class="card-title">Table 7</strong>
+                            <p>Vacant</p>
+                        </div>
+                        <div class="card bg-primary text-light p-3">
+                            <strong class="card-title">Table 8</strong>
+                            <p>Booked</p>
+                        </div>
+                        <div class="card bg-light text-primary p-3">
+                            <strong class="card-title">Table 9</strong>
+                            <p>Vacant</p>
+                        </div>
+                        <div class="card bg-light text-primary p-3">
+                            <strong class="card-title">Table 10</strong>
+                            <p>Vacant</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card border-primary mb-3 tab-pane fade" role="tabpanel" id="orders">
+                <div class="card-header text-primary h5 p-3">Orders</div>
+                <div class="card-body">
+                    <div class="card-deck">
+
+                    </div>
+                    <br>
+                    <div class="card-deck">
+
+                    </div>
+                </div>
+            </div>
+
         </div>
     </main>
 
@@ -83,7 +148,7 @@
         integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
         crossorigin="anonymous"></script>
 
-    <script>
+    <!-- <script>
         function switchTab(id) {
             document.getElementById('ifr').setAttribute('src', id + '.html');
             document.getElementById('w_tables').className = 'list-group-item list-group-item-action';
@@ -91,7 +156,7 @@
 
             document.getElementById(id).className = 'list-group-item list-group-item-action active';
         }
-    </script>
+    </script> -->
 </body>
 
 </html>
