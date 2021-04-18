@@ -10,7 +10,7 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link href="css/styles.css" rel="stylesheet">
     <title>Khidma - Home</title>
-    <link rel="icon" type="image/png" href="/images/favicon.png"/>
+    <link rel="icon" type="image/png" href="/images/favicon.png" />
 </head>
 
 <body>
@@ -32,6 +32,25 @@
         </div>
     </nav>
 
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Login to order</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body text-center">
+                    You need to register to be able to place orders.
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Cancel</button>
+                    <a type="button" class="btn btn-primary" href="customer_registration.html">Register Now</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <main>
         <section class="jumbotron bg-white">
             <div class="row h-100 justify-content-center align-items-center">
@@ -39,7 +58,7 @@
                     <h1>Order at your convenience</h1>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta, optio dolore? Excepturi, optio
                         possimus architecto dolorum eveniet cumque id ad!</p>
-                    <button class="btn btn-primary w-50">Place an Order</button>
+                    <a class="btn btn-primary w-50" href="customer_registration.html">Place an Order</a>
                 </div>
                 <img src="images/reservation.jpg" alt="" class="img-fluid col-md-6">
             </div>
@@ -81,10 +100,10 @@
                                             Hic, possimus.</p>
                                         <div class="list-group list-group-horizontal">
                                             <a href="#"
-                                                class="list-group-item list-group-item-action bg-danger text-white text-center">-</a>
+                                            data-bs-toggle="modal" data-bs-target="#exampleModal" class="list-group-item list-group-item-action bg-danger text-white text-center">-</a>
                                             <a class="list-group-item">0</a>
                                             <a href="#"
-                                                class="list-group-item list-group-item-action text-center active">+</a>
+                                                 data-bs-toggle="modal" data-bs-target="#exampleModal" class="list-group-item list-group-item-action text-center active">+</a>
                                         </div>
                                     </div>
                                 </div>
@@ -96,10 +115,10 @@
                                             Hic, possimus.</p>
                                         <div class="list-group list-group-horizontal">
                                             <a href="#"
-                                                class="list-group-item list-group-item-action bg-danger text-white text-center">-</a>
+                                                 data-bs-toggle="modal" data-bs-target="#exampleModal" class="list-group-item list-group-item-action bg-danger text-white text-center">-</a>
                                             <a class="list-group-item">0</a>
                                             <a href="#"
-                                                class="list-group-item list-group-item-action text-center active">+</a>
+                                                 data-bs-toggle="modal" data-bs-target="#exampleModal" class="list-group-item list-group-item-action text-center active">+</a>
                                         </div>
                                     </div>
                                 </div>
@@ -111,10 +130,10 @@
                                             Hic, possimus.</p>
                                         <div class="list-group list-group-horizontal">
                                             <a href="#"
-                                                class="list-group-item list-group-item-action bg-danger text-white text-center">-</a>
+                                                 data-bs-toggle="modal" data-bs-target="#exampleModal" class="list-group-item list-group-item-action bg-danger text-white text-center">-</a>
                                             <a class="list-group-item">0</a>
                                             <a href="#"
-                                                class="list-group-item list-group-item-action text-center active">+</a>
+                                                 data-bs-toggle="modal" data-bs-target="#exampleModal" class="list-group-item list-group-item-action text-center active">+</a>
                                         </div>
                                     </div>
                                 </div>
@@ -134,10 +153,10 @@
                                             Hic, possimus.</p>
                                         <div class="list-group list-group-horizontal">
                                             <a href="#"
-                                                class="list-group-item list-group-item-action bg-danger text-white text-center">-</a>
+                                                 data-bs-toggle="modal" data-bs-target="#exampleModal"  data-bs-toggle="modal" data-bs-target="#exampleModal" class="list-group-item list-group-item-action bg-danger text-white text-center">-</a>
                                             <a class="list-group-item">0</a>
                                             <a href="#"
-                                                class="list-group-item list-group-item-action text-center active">+</a>
+                                                 data-bs-toggle="modal" data-bs-target="#exampleModal" class="list-group-item list-group-item-action text-center active">+</a>
                                         </div>
                                     </div>
                                 </div>
@@ -149,10 +168,10 @@
                                             Hic, possimus.</p>
                                         <div class="list-group list-group-horizontal">
                                             <a href="#"
-                                                class="list-group-item list-group-item-action bg-danger text-white text-center">-</a>
+                                                 data-bs-toggle="modal" data-bs-target="#exampleModal" class="list-group-item list-group-item-action bg-danger text-white text-center">-</a>
                                             <a class="list-group-item">0</a>
                                             <a href="#"
-                                                class="list-group-item list-group-item-action text-center active">+</a>
+                                                 data-bs-toggle="modal" data-bs-target="#exampleModal" class="list-group-item list-group-item-action text-center active">+</a>
                                         </div>
                                     </div>
                                 </div>
@@ -164,10 +183,10 @@
                                             Hic, possimus.</p>
                                         <div class="list-group list-group-horizontal">
                                             <a href="#"
-                                                class="list-group-item list-group-item-action bg-danger text-white text-center">-</a>
+                                                 data-bs-toggle="modal" data-bs-target="#exampleModal" class="list-group-item list-group-item-action bg-danger text-white text-center">-</a>
                                             <a class="list-group-item">0</a>
                                             <a href="#"
-                                                class="list-group-item list-group-item-action text-center active">+</a>
+                                                 data-bs-toggle="modal" data-bs-target="#exampleModal" class="list-group-item list-group-item-action text-center active">+</a>
                                         </div>
                                     </div>
                                 </div>
