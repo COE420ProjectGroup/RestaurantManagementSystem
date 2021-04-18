@@ -10,7 +10,7 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link href="css/styles.css" rel="stylesheet">
     <title>My Dashboard</title>
-    <link rel="icon" type="image/png" href="/images/favicon.png"/>
+    <link rel="icon" type="image/png" href="images/favicon.png" />
 </head>
 
 <body>
@@ -25,13 +25,13 @@
             </a>
 
             <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdownMenuLink">
-                
+
                 <li><a class="dropdown-item" href="#">
                         <span class="material-icons align-middle">logout</span>
                         Logout
                     </a>
                 </li>
-               
+
             </ul>
         </div>
         </div>
@@ -39,7 +39,7 @@
 
     <main class="dashboard">
         <div class="list-group p-4">
-            <h4 class="list-group-heading py-3 py-xl-5">Dashboard</h4>
+            <h4 class="list-group-heading py-3 py-xl-5">Menu</h4>
             <a href="#" class="list-group-item list-group-item-action active">
                 <span class="material-icons align-middle">table_view</span>
                 Menu
@@ -48,7 +48,7 @@
                 <span class="material-icons align-middle">list_alt</span>
                 Order Status
             </a>
-    
+
         </div>
         <section class="jumbotron" id="featured">
             <div class="row">
@@ -74,7 +74,7 @@
                                             <a onclick="dec('m1');"
                                                 class="list-group-item list-group-item-action bg-danger text-white text-center">-</a>
                                             <a class="list-group-item" id="m1">0</a>
-                                            <a  class="list-group-item list-group-item-action text-center active"
+                                            <a class="list-group-item list-group-item-action text-center active"
                                                 onclick="inc('m1');">+</a>
                                         </div>
                                     </div>
@@ -171,7 +171,7 @@
         </section>
         </nav>
 
-        
+
     </main>
 
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
@@ -184,16 +184,16 @@
         integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
         crossorigin="anonymous"></script>
 
-        <script>
-            function inc(id) {
-              document.getElementById(id).innerHTML = parseInt(document.getElementById(id).innerHTML) + 1;
-            }
-            
-            function dec(id) {
-                var qty = parseInt(document.getElementById(id).innerHTML);
-                document.getElementById(id).innerHTML = (qty == 0) ? 0 : qty - 1;
-            }
-            </script>
+    <script>
+        function inc(id) {
+            document.getElementById(id).innerHTML = parseInt(document.getElementById(id).innerHTML) + 1;
+        }
+
+        function dec(id) {
+            var qty = parseInt(document.getElementById(id).innerHTML);
+            document.getElementById(id).innerHTML = (qty == 0) ? 0 : qty - 1;
+        }
+    </script>
 
 </body>
 

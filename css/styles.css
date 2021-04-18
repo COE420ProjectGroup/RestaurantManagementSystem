@@ -49,7 +49,6 @@ a:hover {
 
 @media (min-width: 75rem) {
   .dashboard {
-    height: 100vh;
     display: flex;
   }
   p {
