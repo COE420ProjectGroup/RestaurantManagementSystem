@@ -24,6 +24,10 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6{
   transform: scale(0.98)
 }
 
+a:hover {
+  text-decoration: none;
+}
+
 .navbar-brand {
   font: 1.5em Modernist-Milk, Arial, sans-serif;
   margin: 0;
