@@ -10,7 +10,7 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link href="css/styles.css" rel="stylesheet">
     <title>My Dashboard</title>
-    <link rel="icon" type="image/png" href="images/favicon.png"/>
+    <link rel="icon" type="image/png" href="images/favicon.png" />
 </head>
 
 <body>
@@ -47,26 +47,29 @@
     <main class="dashboard">
         <div class="list-group p-4">
             <h4 class="list-group-heading py-3 py-xl-5">Dashboard</h4>
-            <a onclick="document.getElementById('ifr').setAttribute('src','w_tables.html')" class="list-group-item list-group-item-action active">
+            <button onclick="switchTab('w_tables')" class="list-group-item list-group-item-action active" id="w_tables">
                 <span class="material-icons align-middle">table_view</span>
                 Tables
-            </a>
-            <a onclick="document.getElementById('ifr').setAttribute('src','w_orders.html')" class="list-group-item list-group-item-action">
+            </button>
+            <button onclick="switchTab('w_orders')" class="list-group-item list-group-item-action" id="w_orders">
                 <span class="material-icons align-middle">list_alt</span>
                 Orders
-            </a>
-            <a onclick="document.getElementById('ifr').setAttribute('src','w_kitchen.html')" class="list-group-item list-group-item-action">
+            </button>
+            <!-- <a onclick="document.getElementById('ifr').setAttribute('src','w_kitchen.html')"
+                class="list-group-item list-group-item-action" id="kitchen">
                 <span class="material-icons align-middle">blender</span>
                 Kitchen
             </a>
-            <a onclick="document.getElementById('ifr').setAttribute('src','w_overview.html')" class="list-group-item list-group-item-action">
+            <a onclick="document.getElementById('ifr').setAttribute('src','w_overview.html')"
+                class="list-group-item list-group-item-action">
                 <span class="material-icons align-middle">assessment</span>
                 Overview
-            </a>
+            </a> -->
         </div>
 
         <div class="flex-grow-1 p-md-5 bg-light">
-            <iframe class="shadow rounded" id="ifr" src="w_tables.html" width="100%" onload="this.style.height=(this.contentWindow.document.body.scrollHeight+20)+'px';"></iframe>
+            <iframe class="shadow rounded" id="ifr" src="w_tables.html" width="100%"
+                onload="this.style.height=(this.contentWindow.document.body.scrollHeight+20)+'px';"></iframe>
         </div>
     </main>
 
@@ -80,6 +83,15 @@
         integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
         crossorigin="anonymous"></script>
 
+    <script>
+        function switchTab(id) {
+            document.getElementById('ifr').setAttribute('src', id + '.html');
+            document.getElementById('w_tables').className = 'list-group-item list-group-item-action';
+            document.getElementById('w_orders').className = 'list-group-item list-group-item-action';
+
+            document.getElementById(id).className = 'list-group-item list-group-item-action active';
+        }
+    </script>
 </body>
 
 </html>
