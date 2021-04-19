@@ -38,127 +38,139 @@
     </nav>
 
     <main class="dashboard">
-        <div class="list-group p-4">
-            <h4 class="list-group-heading py-3 py-xl-5">Menu</h4>
-            <a href="#" class="list-group-item list-group-item-action active">
-                <span class="material-icons align-middle">table_view</span>
+        <nav class="nav nav-tabs nav-pills flex-column p-4">
+            <h4 class="h2 py-3 py-xl-5">Menu</h4>
+            <button class="fs-5 pr-2 nav-link active" data-bs-toggle="tab" data-bs-target="#featured" type="button"
+                role="tab">
+                <span class="material-icons align-middle">menu_book</span>
                 Menu
-            </a>
-            <a href="#" class="list-group-item list-group-item-action">
-                <span class="material-icons align-middle">list_alt</span>
+            </button>
+            <button style="white-space: nowrap;" class="fs-5 pr-2 nav-link" data-bs-toggle="tab" data-bs-target="#order_status" type="button"
+                role="tab">
+                <span class="material-icons align-middle">schedule</span>
                 Order Status
-            </a>
+            </button>
 
-        </div>
-        <section class="jumbotron" id="featured">
-            <div class="row">
-                <img src="images/menu.jpg" alt="" class="d-none d-xl-block col-xl-4">
+        </nav>
 
-                <div class="col-xl-8 p-5">
-                    <h1>Featured Dishes</h1>
-                    <p>
-                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptate fugit expedita minima,
-                        aperiam error ut.
-                    </p>
-                    <div class="card border-primary">
-                        <div class="card-header text-primary h5 p-3">Starters</div>
-                        <div class="card-body">
-                            <div class="card-deck">
-                                <div class="card border-dark">
-                                    <img src="images/start_1.jpg" class="card-img-top" alt="...">
-                                    <div class="card-body">
-                                        <h5 class="card-title">Soup</h5>
-                                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                                            Hic, possimus.</p>
-                                        <div class="list-group list-group-horizontal">
-                                            <a onclick="dec('m1');"
-                                                class="list-group-item list-group-item-action bg-danger text-white text-center">-</a>
-                                            <a class="list-group-item" id="m1">0</a>
-                                            <a class="list-group-item list-group-item-action text-center active"
-                                                onclick="inc('m1');">+</a>
+
+        <div class="flex-grow-1 tab-content p-md-5 bg-light">
+            <section class="tab-pane active in" role="tabpanel" id="featured">
+                <div class="row">
+                    <img src="images/menu.jpg" alt="" class="d-none d-xl-block col-xl-4">
+
+                    <div class="col-xl-8 p-5">
+                        <h1>Featured Dishes</h1>
+                        <p>
+                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptate fugit expedita minima,
+                            aperiam error ut.
+                        </p>
+                        <div class="card border-primary">
+                            <div class="card-header text-primary h5 p-3">Starters</div>
+                            <div class="card-body">
+                                <div class="card-deck">
+                                    <div class="card border-dark">
+                                        <img src="images/start_1.jpg" class="card-img-top" alt="...">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Soup</h5>
+                                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing
+                                                elit.
+                                                Hic, possimus.</p>
+                                            <div class="list-group list-group-horizontal">
+                                                <a onclick="dec('m1');"
+                                                    class="list-group-item list-group-item-action bg-danger text-white text-center">-</a>
+                                                <a class="list-group-item" id="m1">0</a>
+                                                <a class="list-group-item list-group-item-action text-center active"
+                                                    onclick="inc('m1');">+</a>
+                                            </div>
                                         </div>
                                     </div>
-                                </div>
-                                <div class="card border-dark">
-                                    <img src="images/start_2.jpg" class="card-img-top" alt="...">
-                                    <div class="card-body">
-                                        <h5 class="card-title">Salad</h5>
-                                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                                            Hic, possimus.</p>
-                                        <div class="list-group list-group-horizontal">
-                                            <a onclick="dec('m2');"
-                                                class="list-group-item list-group-item-action bg-danger text-white text-center">-</a>
-                                            <a id="m2" class="list-group-item">0</a>
-                                            <a onclick="inc('m2');"
-                                                class="list-group-item list-group-item-action text-center active">+</a>
+                                    <div class="card border-dark">
+                                        <img src="images/start_2.jpg" class="card-img-top" alt="...">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Salad</h5>
+                                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing
+                                                elit.
+                                                Hic, possimus.</p>
+                                            <div class="list-group list-group-horizontal">
+                                                <a onclick="dec('m2');"
+                                                    class="list-group-item list-group-item-action bg-danger text-white text-center">-</a>
+                                                <a id="m2" class="list-group-item">0</a>
+                                                <a onclick="inc('m2');"
+                                                    class="list-group-item list-group-item-action text-center active">+</a>
+                                            </div>
                                         </div>
                                     </div>
-                                </div>
-                                <div class="card border-dark">
-                                    <img src="images/start_3.jpg" class="card-img-top" alt="...">
-                                    <div class="card-body">
-                                        <h5 class="card-title">Garlic Bread</h5>
-                                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                                            Hic, possimus.</p>
-                                        <div class="list-group list-group-horizontal">
-                                            <a onclick="dec('m3');"
-                                                class="list-group-item list-group-item-action bg-danger text-white text-center">-</a>
-                                            <a id="m3" class="list-group-item">0</a>
-                                            <a onclick="inc('m3');"
-                                                class="list-group-item list-group-item-action text-center active">+</a>
+                                    <div class="card border-dark">
+                                        <img src="images/start_3.jpg" class="card-img-top" alt="...">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Garlic Bread</h5>
+                                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing
+                                                elit.
+                                                Hic, possimus.</p>
+                                            <div class="list-group list-group-horizontal">
+                                                <a onclick="dec('m3');"
+                                                    class="list-group-item list-group-item-action bg-danger text-white text-center">-</a>
+                                                <a id="m3" class="list-group-item">0</a>
+                                                <a onclick="inc('m3');"
+                                                    class="list-group-item list-group-item-action text-center active">+</a>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <br>
-                    <div class="card border-primary">
-                        <div class="card-header text-primary h5 p-3">Main Course</div>
-                        <div class="card-body">
-                            <div class="card-deck">
-                                <div class="card border-dark">
-                                    <img src="images/main_1.jpg" class="card-img-top" alt="...">
-                                    <div class="card-body">
-                                        <h5 class="card-title">Steak</h5>
-                                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                                            Hic, possimus.</p>
-                                        <div class="list-group list-group-horizontal">
-                                            <a onclick="dec('m4');"
-                                                class="list-group-item list-group-item-action bg-danger text-white text-center">-</a>
-                                            <a id="m4" class="list-group-item">0</a>
-                                            <a onclick="inc('m4');"
-                                                class="list-group-item list-group-item-action text-center active">+</a>
+                        <br>
+                        <div class="card border-primary">
+                            <div class="card-header text-primary h5 p-3">Main Course</div>
+                            <div class="card-body">
+                                <div class="card-deck">
+                                    <div class="card border-dark">
+                                        <img src="images/main_1.jpg" class="card-img-top" alt="...">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Steak</h5>
+                                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing
+                                                elit.
+                                                Hic, possimus.</p>
+                                            <div class="list-group list-group-horizontal">
+                                                <a onclick="dec('m4');"
+                                                    class="list-group-item list-group-item-action bg-danger text-white text-center">-</a>
+                                                <a id="m4" class="list-group-item">0</a>
+                                                <a onclick="inc('m4');"
+                                                    class="list-group-item list-group-item-action text-center active">+</a>
+                                            </div>
                                         </div>
                                     </div>
-                                </div>
-                                <div class="card border-dark">
-                                    <img src="images/main_2.jpg" class="card-img-top" alt="...">
-                                    <div class="card-body">
-                                        <h5 class="card-title">Pasta</h5>
-                                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                                            Hic, possimus.</p>
-                                        <div class="list-group list-group-horizontal">
-                                            <a onclick="dec('m5');"
-                                                class="list-group-item list-group-item-action bg-danger text-white text-center">-</a>
-                                            <a id="m5" class="list-group-item">0</a>
-                                            <a onclick="inc('m5');"
-                                                class="list-group-item list-group-item-action text-center active">+</a>
+                                    <div class="card border-dark">
+                                        <img src="images/main_2.jpg" class="card-img-top" alt="...">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Pasta</h5>
+                                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing
+                                                elit.
+                                                Hic, possimus.</p>
+                                            <div class="list-group list-group-horizontal">
+                                                <a onclick="dec('m5');"
+                                                    class="list-group-item list-group-item-action bg-danger text-white text-center">-</a>
+                                                <a id="m5" class="list-group-item">0</a>
+                                                <a onclick="inc('m5');"
+                                                    class="list-group-item list-group-item-action text-center active">+</a>
+                                            </div>
                                         </div>
                                     </div>
-                                </div>
-                                <div class="card border-dark">
-                                    <img src="images/main_3.jpg" class="card-img-top" alt="...">
-                                    <div class="card-body">
-                                        <h5 class="card-title">Chicken</h5>
-                                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                                            Hic, possimus.</p>
-                                        <div class="list-group list-group-horizontal">
-                                            <a onclick="dec('m6');"
-                                                class="list-group-item list-group-item-action bg-danger text-white text-center">-</a>
-                                            <a id="m6" class="list-group-item">0</a>
-                                            <a onclick="inc('m6');"
-                                                class="list-group-item list-group-item-action text-center active">+</a>
+                                    <div class="card border-dark">
+                                        <img src="images/main_3.jpg" class="card-img-top" alt="...">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Chicken</h5>
+                                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing
+                                                elit.
+                                                Hic, possimus.</p>
+                                            <div class="list-group list-group-horizontal">
+                                                <a onclick="dec('m6');"
+                                                    class="list-group-item list-group-item-action bg-danger text-white text-center">-</a>
+                                                <a id="m6" class="list-group-item">0</a>
+                                                <a onclick="inc('m6');"
+                                                    class="list-group-item list-group-item-action text-center active">+</a>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
@@ -166,12 +178,21 @@
                         </div>
                     </div>
                 </div>
-            </div>
-            </div>
-        </section>
-        </nav>
 
+            </section>
+            <section class="tab-pane fade" role="tabpanel" id="order_status">
+                <div class="card-header text-primary h5 p-3">Order Status</div>
+                <div class="card-body">
+                    <div class="card-deck">
 
+                    </div>
+                    <br>
+                    <div class="card-deck">
+
+                    </div>
+                </div>
+            </section>
+        </div>
     </main>
 
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
