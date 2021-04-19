@@ -1,0 +1,13 @@
+Will not apply HSTS. The HSTS database must be a regular and non-world-writable file.
+ERROR: could not open HSTS store at '/home/ashithfarhan/.wget-hsts'. HSTS will be disabled.
+--2021-04-19 10:26:31--  https://static.toiimg.com/thumb/58397725.cms?width=1200
+Resolving static.toiimg.com (static.toiimg.com)... 2.19.25.148, 2600:1417:e000:19a::216f, 2600:1417:e000:183::216f
+Connecting to static.toiimg.com (static.toiimg.com)|2.19.25.148|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 19214 (19K) [image/jpeg]
+Saving to: ‘58397725.cms?width=1200’
+
+58397725.cms?width=1200         0%[                                                  ]       0  --.-KB/s               58397725.cms?width=1200       100%[=================================================>]  18.76K  --.-KB/s    in 0.01s   
+
+2021-04-19 10:26:32 (1.75 MB/s) - ‘58397725.cms?width=1200’ saved [19214/19214]
+
