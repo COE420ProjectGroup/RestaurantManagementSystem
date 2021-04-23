@@ -1,17 +1,8 @@
 @import url("theme.css");
 
-@font-face {
-  font-family: Modernist-Milk;
-  src: url('../font/Modernist-Milk.otf');
-}
-
-*  {
+* {
   margin: 0;
   padding: 0;
-}
-
-h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6{
-  font-family: Modernist-Milk, sans-serif;
 }
 
 .btn {
@@ -37,16 +28,6 @@ a:hover {
   font-weight: bold;
 }
 
-.jumbotron {
-  margin: 0;
-  padding: 2rem 1rem;
-  background-color: #e9ecef;
-}
-
-/* .menu-image {
-  display: none;
-} */
-
 @media (min-width: 75rem) {
   .dashboard {
     display: flex;
@@ -54,7 +35,4 @@ a:hover {
   p {
     font-size: 1.25em;
   }
-  /* .menu-image {
-    display: block;
-  } */
 }
