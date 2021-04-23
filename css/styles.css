@@ -20,7 +20,8 @@ a:hover {
 }
 
 .navbar-brand {
-  font: 1.5em Modernist-Milk, Arial, sans-serif;
+  font: 1.5em Merriweather, serif;
+  font-weight: 700;
   margin: 0;
 }
 
